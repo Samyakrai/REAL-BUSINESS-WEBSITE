@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | RISE UP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">RISE UP</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="highlight">Courses</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Our Premium Courses</h2>
+            <div class="course-grid">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <img src="assets/images/web_dev.png" alt="Web Development" class="course-img">
+                    <div class="course-info">
+                        <h3>Web Development</h3>
+                        <p class="course-meta">
+                            <span>Duration: 3 Months</span>
+                        </p>
+                        <p>Master HTML, CSS, JS, and React to build modern websites.</p>
+                        <span class="course-price">₹ 4,999</span>
+                        <button class="btn" onclick="selectCourse('Web Development', 4999)">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card">
+                    <img src="assets/images/data_science.png" alt="Data Science" class="course-img">
+                    <div class="course-info">
+                        <h3>Data Science</h3>
+                        <p class="course-meta">
+                            <span>Duration: 6 Months</span>
+                        </p>
+                        <p>Learn Python, Pandas, and Machine Learning from scratch.</p>
+                        <span class="course-price">₹ 7,999</span>
+                        <button class="btn" onclick="selectCourse('Data Science', 7999)">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card">
+                    <img src="assets/images/data_science.png" alt="AI & ML" class="course-img">
+                    <div class="course-info">
+                        <h3>AI & Machine Learning</h3>
+                        <p class="course-meta">
+                            <span>Duration: 6 Months</span>
+                        </p>
+                        <p>Deep dive into Neural Networks, NLP, and Computer Vision.</p>
+                        <span class="course-price">₹ 8,999</span>
+                        <button class="btn" onclick="selectCourse('AI & Machine Learning', 8999)">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card">
+                    <img src="assets/images/web_dev.png" alt="Cyber Security" class="course-img">
+                    <div class="course-info">
+                        <h3>Cyber Security</h3>
+                        <p class="course-meta">
+                            <span>Duration: 4 Months</span>
+                        </p>
+                        <p>Learn Ethical Hacking, Network Security, and Cryptography.</p>
+                        <span class="course-price">₹ 6,499</span>
+                        <button class="btn" onclick="selectCourse('Cyber Security', 6499)">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="course-card">
+                    <img src="assets/images/data_science.png" alt="Cloud Computing" class="course-img">
+                    <div class="course-info">
+                        <h3>Cloud Computing</h3>
+                        <p class="course-meta">
+                            <span>Duration: 3 Months</span>
+                        </p>
+                        <p>Master AWS, Azure, and Google Cloud Platform services.</p>
+                        <span class="course-price">₹ 5,999</span>
+                        <button class="btn" onclick="selectCourse('Cloud Computing', 5999)">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="course-card">
+                    <img src="assets/images/web_dev.png" alt="DevOps" class="course-img">
+                    <div class="course-info">
+                        <h3>DevOps Engineering</h3>
+                        <p class="course-meta">
+                            <span>Duration: 4 Months</span>
+                        </p>
+                        <p>Learn Docker, Kubernetes, CI/CD pipelines and Automation.</p>
+                        <span class="course-price">₹ 6,999</span>
+                        <button class="btn" onclick="selectCourse('DevOps Engineering', 6999)">Enroll Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RISE UP. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
