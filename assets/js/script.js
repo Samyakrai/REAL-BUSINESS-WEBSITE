@@ -35,7 +35,6 @@ function updateNavigation() {
 }
 
 // Login Logic
-// Login Logic
 function handleLogin(event) {
     event.preventDefault();
     const email = document.getElementById('email').value;
@@ -270,15 +269,13 @@ function removeCartItem(courseName) {
     }
 }
 
-// Handle Feedback Form Submission (Auto-Download Logic)
+// Handle Feedback Form Submission (Server-Side Logging)
 function handleFeedback(event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
-
-
 
     if (name && email && message) {
         const feedbackData = {
@@ -298,21 +295,19 @@ function handleFeedback(event) {
                 if (response.ok) {
                     return response.json();
                 }
-                throw new Error('Network response was not ok.');
+                throw new Error('Server responded with ' + response.status);
             })
             .then(data => {
-                alert('Feedback saved successfully to the Database!');
+                alert('Feedback saved successfully to the Server Log!');
                 document.getElementById('feedback-form').reset();
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('Failed to save feedback. Please make sure the server is running (python3 server.py).');
+                alert('Failed to save feedback.\n\nError: ' + error.message + '\n\nPlease ensure you launched the site using "start_website.command".');
             });
     }
 }
 
-// Toggle Happy New Year Message
-// Toggle Happy New Year Message
 // Toggle Happy New Year Message
 function toggleNewYearMessage() {
     const msg = document.getElementById('hny-message');
@@ -332,5 +327,3 @@ function toggleNewYearMessage() {
         btn.innerText = 'Show New Year Message';
     }
 }
-
-
