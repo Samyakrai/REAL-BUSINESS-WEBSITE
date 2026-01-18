@@ -333,28 +333,4 @@ function toggleNewYearMessage() {
     }
 }
 
-// Check for File Protocol and Suggest Server Mode
-(function () {
-    if (window.location.protocol === 'file:') {
-        const banner = document.createElement('div');
-        banner.style.position = 'fixed';
-        banner.style.top = '0';
-        banner.style.left = '0';
-        banner.style.width = '100%';
-        banner.style.background = '#ffcc00';
-        banner.style.color = '#000';
-        banner.style.textAlign = 'center';
-        banner.style.padding = '10px';
-        banner.style.zIndex = '10000';
-        banner.style.fontWeight = 'bold';
-        banner.style.fontFamily = 'Arial, sans-serif';
-        banner.innerHTML = `
-            ⚠️ functionality Limited: You are viewing this file directly. 
-            <a href="http://localhost:8000${window.location.pathname.split('/').pop()}" style="color: #000; text-decoration: underline; margin-left: 10px;">
-                Click here to enable Feedback Saving
-            </a>
-        `;
-        document.body.appendChild(banner);
-        document.body.style.marginTop = '40px';
-    }
-})();
+
