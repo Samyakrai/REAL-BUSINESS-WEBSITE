@@ -1,10 +1,15 @@
 /* Global Styles */
 :root {
-    --primary-color: #FFD700; /* Gold/Yellow */
-    --secondary-color: #121212; /* Deep Black */
-    --accent-color: #333333; /* Dark Gray for cards/sections */
-    --text-color: #FFFFFF; /* White */
-    --text-muted: #CCCCCC; /* Light Gray */
+    --primary-color: #FFD700;
+    /* Gold/Yellow */
+    --secondary-color: #121212;
+    /* Deep Black */
+    --accent-color: #333333;
+    /* Dark Gray for cards/sections */
+    --text-color: #FFFFFF;
+    /* White */
+    --text-muted: #CCCCCC;
+    /* Light Gray */
     --font-main: 'Inter', sans-serif;
     --transition: all 0.3s ease;
 }
@@ -34,7 +39,12 @@ ul {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -70,9 +80,17 @@ p {
     color: var(--primary-color);
 }
 
-.text-center { text-align: center; }
-.section-padding { padding: 80px 0; }
-.highlight { color: var(--primary-color); }
+.text-center {
+    text-align: center;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
 
 /* Navigation */
 header {
@@ -109,7 +127,7 @@ nav {
 /* Hero Section */
 .hero {
     height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -215,8 +233,8 @@ nav {
     color: var(--text-muted);
 }
 
-.form-group input, 
-.form-group textarea, 
+.form-group input,
+.form-group textarea,
 .form-group select {
     width: 100%;
     padding: 12px;
@@ -227,7 +245,7 @@ nav {
     font-size: 1rem;
 }
 
-.form-group input:focus, 
+.form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
@@ -245,9 +263,164 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* simple hidden for now, could be burger menu */
+        display: none;
+        /* simple hidden for now, could be burger menu */
     }
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
+}
+
+/* About Us Section */
+.about-us {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 80px 0;
+    background-color: var(--accent-color);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.review-card {
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    transition: var(--transition);
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.review-text {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.student-name {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0;
+    text-align: right;
+}
+
+/* Contact Page Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.contact-info-card {
+    background-color: var(--accent-color);
+    padding: 30px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.info-item {
+    margin-bottom: 30px;
+}
+
+.info-item h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Profile Page Styles */
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-header h2 {
+    margin-bottom: 5px;
+}
+
+.profile-email {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.logout-btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    background: transparent;
+    color: #fff;
+    border-color: #555;
+    margin-top: 10px;
+}
+
+.dashboard-section {
+    margin-top: 40px;
+}
+
+.section-title {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.purchase-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.purchase-card {
+    background: var(--accent-color);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.purchase-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.purchase-card p {
+    margin-bottom: 0;
+}
+
+.purchase-date {
+    font-size: 0.8rem;
+    color: #888;
 }

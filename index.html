@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -18,6 +20,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="courses.html">Courses</a></li>
                     <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,8 +30,10 @@
     <section class="hero">
         <div class="container hero-content">
             <h1>Upgrade Your Skills <br> with <span class="highlight">RISE UP</span></h1>
-            <p>Master the latest IT technologies with industry-experts. Join thousands of students achieving their dreams.</p>
+            <p>Master the latest IT technologies with industry-experts. Join thousands of students achieving their
+                dreams.</p>
             <a href="courses.html" class="btn">Explore Courses</a>
+
         </div>
     </section>
 
@@ -42,7 +47,7 @@
                     <p>Students Enrolled</p>
                 </div>
                 <div class="achievement-card">
-                    <h3>95%</h3>
+                    <h3>91%</h3>
                     <p>Placement Rate</p>
                 </div>
                 <div class="achievement-card">
@@ -57,6 +62,62 @@
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="container">
+            <h2 class="text-center">About RISE UP</h2>
+            <div class="about-content">
+                <p>RISE UP is a leading online learning platform dedicated to empowering individuals with the skills
+                    needed to thrive in the digital age. Founded with a mission to bridge the gap between traditional
+                    education and industry demands, we offer high-quality, accessible courses in various IT domains.</p>
+                <p>Our team of expert instructors brings years of real-world experience to the virtual classroom,
+                    ensuring that our students not only learn concepts but also how to apply them. Whether you're a
+                    beginner looking to start a career or a professional aiming to upskill, RISE UP is your partner in
+                    growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="text-center">Student Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="review-text">"RISE UP transformed my career. The web development course was comprehensive
+                        and the projects helped me build a strong portfolio. Highly recommend!"</p>
+                    <p class="student-name">- Priya Sharma</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"The instructors are amazing. They explain complex topics simply. I landed my
+                        first job as a data analyst within a month of completing the course."</p>
+                    <p class="student-name">- Rahul Verma</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Great platform for learning at your own pace. The community support is
+                        excellent, and the content is up-to-date with industry standards."</p>
+                    <p class="student-name">- Anjali Nair</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Happy New Year Section -->
+    <section class="hny-section" style="text-align: center; padding: 40px 0; background-color: var(--secondary-color);">
+        <div class="container">
+            <button class="btn" onclick="toggleNewYearMessage()" id="hny-btn">Show New Year Message</button>
+            <h2 id="hny-message"
+                style="display: none; color: #FFD700; margin-top: 20px; font-size: 3rem; text-shadow: 2px 2px 4px #000;">
+                HAPPY NEW YEAR 2026!<br>
+                <span style="font-size: 1.5rem; display: block; margin-top: 10px; color: #fff;">
+                    Use Coupon Code <strong
+                        style="color: #ffcc00; border: 1px dashed #ffcc00; padding: 5px;">NEWYEAR26</strong> for 30%
+                    OFF!
+                </span>
+            </h2>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -64,5 +125,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

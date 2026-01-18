@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | RISE UP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">RISE UP</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="profile-header">
+                <h2 style="margin-bottom: 5px;">Welcome!</h2>
+                <p id="user-email-display" style="color: var(--primary-color); font-weight: bold;"></p>
+                <button onclick="logout()" class="btn"
+                    style="padding: 8px 20px; font-size: 0.9rem; background: transparent; color: #fff; border-color: #555; margin-top: 10px;">Logout</button>
+            </div>
+
+            <div class="dashboard-section">
+                <h3 class="section-title">My Cart</h3>
+                <div id="cart-list">
+                    <p>Your cart is empty.</p>
+                </div>
+            </div>
+
+            <div class="dashboard-section">
+                <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 15px; margin-bottom: 20px;">My
+                    Purchased Courses</h3>
+
+                <div id="courses-list">
+                    <!-- Courses will be populated here -->
+                    <p>Loading...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RISE UP. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Check auth on load
+        if (!localStorage.getItem('userEmail')) {
+            window.location.href = 'login.html';
+        } else {
+            loadProfile();
+        }
+    </script>
+</body>
+
+</html>
